@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="header__logo">
+                <img src="images/logo.png" alt="Restaurant Logo">
+            </a>
+
+            <nav class="header__nav header__nav--desktop">
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions header__actions--desktop">
+                <a href="#book" class="button button--outline">Book a Table</a>
+            </div>
+
+            <button class="header__burger-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileNav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="header__mobile-nav" id="mobileNav">
+                 <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="header__actions--mobile">
+                     <a href="#book" class="button button--outline">Book a Table</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <div class="subheading">
+                        <img src="images/txt.png" alt="Chase the new Flavour" style="max-width: 200px; height: auto;">
+                    </div>
+                    <h1>We provide the best food for you</h1>
+                    <p class="hero__text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="hero__buttons">
+                        <a href="#menu" class="button button--primary">Menu</a>
+                        <a href="#book" class="button button--outline">Book a Table</a>
+                    </div>
+                    <div class="hero__socials">
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <img src="images/twiter.png" alt="Twitter">
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <img src="images/insta.png" alt="Instagram">
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <img src="images/facebook.png" alt="Facebook">
+                        </a>
+                    </div>
+                </div>
+                <div class="hero__image-wrapper">
+                     <img src="images/caffevert.png" alt="Restaurant Main Dish" class="main-hero-img">
+                     <img src="images/dish-2.1.png" alt="Decoration" class="overlay-image" height="364px" width="364px">
+                </div>
+            </div>
+        </section>
+
+        <section class="special-dishes section-padding" id="menu">
+            <div class="container special-dishes__container text-center">
+                <h1>Our Special Dishes</h1>
+                <p class="text-muted" style="max-width: 600px; margin: 1rem auto 0 auto;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+
+                <div class="special-dishes__grid">
+                    <div class="dish-card">
+                        <img src="images/dish-1.1.png" alt="Special Dish 1">
+                        <div class="dish-card__price">$12</div>
+                        <h4>Lumpia with Sauce</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="dish-card">
+                        <img src="images/dish-3.1.png" alt="Special Dish 2">
+                        <div class="dish-card__price">$12</div>
+                        <h4>Fish and Veggies</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="dish-card">
+                        <img src="images/dish-5.png" alt="Special Dish 3">
+                        <div class="dish-card__price">$12</div>
+                        <h4>Tofu Chili</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="dish-card">
+                        <img src="images/dish-4.png" alt="Special Dish 4">
+                        <div class="dish-card__price">$12</div>
+                        <h4>Egg and Cocumber</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="welcome section-padding" id="about">
+             <div class="container welcome__container">
+                 <div class="welcome__image">
+                     <img src="images/dish-2.2.png" alt="Welcome Dish Presentation">
+                 </div>
+                 <div class="welcome__content">
+                     <h1>Welcome to Our Restaurant</h1>
+                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                     <div class="welcome__buttons">
+                         <a href="#menu" class="button button--primary">Menu</a>
+                         <a href="#book" class="button button--outline">Book a Table</a>
+                     </div>
+                 </div>
+             </div>
+        </section>
+
+        <section class="chef-expert section-padding">
+            <div class="container chef__container">
+                <div class="chef__content">
+                    <h1>Our Expert Chef</h1>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <ul class="chef__list text-muted">
+                        <li>Lorem ipsum dolor sit amet, consectetur</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur</li>
+                    </ul>
+                     <div class="chef__buttons">
+                         <a href="#menu" class="button button--primary">Menu</a>
+                         <a href="#book" class="button button--outline">Book a Table</a>
+                     </div>
+                </div>
+                <div class="chef__image">
+                    <img src="images/chef.png" alt="Expert Chef">
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials section-padding" id="gallery">
+            <div class="container testimonials__container">
+                <h1>Our Happy Customers</h1>
+                <p class="text-muted" style="max-width: 600px; margin: 1rem auto 0 auto;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+
+                <div class="testimonials__grid">
+                    <div class="testimonial-card">
+                        <img src="images/castomer1.png" alt="Customer 1">
+                        <div class="testimonial-card__stars">★★★★★</div>
+                        <p class="testimonial-card__quote text-muted">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                        <p class="testimonial-card__name">Anna Lee</p>
+                        <p class="testimonial-card__title text-muted">CEO & Founder Inc </p>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="images/castomer 2.png" alt="Customer 2">
+                        <div class="testimonial-card__stars">★★★★★</div>
+                        <p class="testimonial-card__quote text-muted">"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                        <p class="testimonial-card__name">John Smith</p>
+                        <p class="testimonial-card__title text-muted">CEO & Founder Inc </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter section-padding" id="contact">
+             <div class="newsletter__overlay"></div>
+                <div class="container newsletter__container">
+                     <div class="section-title">
+                        <h2>Get Our Promo Code by Subscribing To Our Newsletter</h2>
+                        <p class="newsletter__subtitle">And never miss latest Updates!</p>
+                    </div>
+                    <form class="newsletter__form">
+                        <input type="email" placeholder="Email Address" required>
+                        <button type="submit" class="button">Subscribe</button>
+                    </form>
+                </div>
+        </section>
+
+    </main>
+
+    <footer class="footer section-padding">
+        <div class="container footer__container">
+
+            <div class="footer__column footer__column--info">
+                <a href="#" class="footer__logo-img">
+                    <img src="images/logo.png" alt="Restaurant Logo" height="40">
+                </a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. <a href="#" class="learn-more">Learn more</a>.</p>
+
+                <div class="opening-hours">
+                    <h4>OPENING HOURS</h4>
+                    <div class="hours-grid">
+                        <div class="hours-item">
+                            <p>Monday - Friday</p>
+                            <p>8:00 am to 9:00 pm</p>
+                        </div>
+                        <div class="hours-item">
+                            <p>Saturday</p>
+                            <p>8:00 am to 9:00 pm</p>
+                        </div>
+                        <div class="hours-item">
+                            <p>Sunday</p>
+                            <p>CLOSED</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__column footer__column--nav">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__column footer__column--dishes">
+                <h4>DISHES</h4>
+                <ul>
+                    <li><a href="#menu">Lumpia with Sauce</a></li>
+                    <li><a href="#menu">Fish and Veggies</a></li>
+                    <li><a href="#menu">Tofu Chili</a></li>
+                    <li><a href="#menu">Egg and Cocumber</a></li>
+                    <li><a href="#menu">More Dishes...</a></li> 
+                </ul>
+            </div>
+
+            <div class="footer__column footer__column--follow">
+                <h4>FOLLOW US</h4>
+                <div class="footer__social">
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <img src="images/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <img src="images/insta.png" alt="Instagram">
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Twitter">
+                        <img src="images/twiter.png" alt="Twitter">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer__copyright">
+            <p>2024 Restaurant. All Rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        const burgerBtn = document.querySelector('.header__burger-menu');
+        const mobileNav = document.querySelector('.header__mobile-nav');
+        const header = document.querySelector('.header');
+
+        if (burgerBtn && mobileNav && header) {
+            burgerBtn.addEventListener('click', () => {
+                const isExpanded = burgerBtn.getAttribute('aria-expanded') === 'true';
+                burgerBtn.setAttribute('aria-expanded', !isExpanded);
+                header.classList.toggle('mobile-nav-active');
+            });
+
+            const mobileNavLinks = mobileNav.querySelectorAll('a');
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (header.classList.contains('mobile-nav-active')) {
+                         burgerBtn.setAttribute('aria-expanded', 'false');
+                         header.classList.remove('mobile-nav-active');
+                    }
+                });
+            });
+        }
+    </script>
+
+</body>
+</html>
